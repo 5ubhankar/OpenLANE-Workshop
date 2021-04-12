@@ -1,7 +1,7 @@
 # OpenLANE-Workshop
 ![advanced_physical_design](https://user-images.githubusercontent.com/82052594/114381521-d4af4780-9ba8-11eb-8ab5-f9009734f23a.png)
 
-Advanced Physical Design - OpenLANE Workshop
+**Advanced Physical Design - OpenLANE Workshop**
 
 
 
