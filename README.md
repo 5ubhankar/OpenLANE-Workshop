@@ -35,15 +35,24 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 ![OpenLANE_flow](https://github.com/efabless/openlane/blob/master/docs/_static/openlane.flow.1.png)
 
 ## Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK
-#### Skywater PDK Files ####
+#### Openlane working directory ####
 
 ![1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1%20openlane%20directory.jpg)
 
-    * Invoking OpenLANE
+![1.1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1.1%20inside%20pdk.jpg)
 
-    * Package Importing
 
-    * Design Folder
+#### Invoking OpenLANE and Package Importing ####
+
+![1.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.2%20pdks.jpg)
+
+#### Design Folder ####
+![1.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.3%20inside%20sky130a.jpg)
+![1.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.4%20invoke%20openlane.jpg)
+![1.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.5%20picorv32a%20runs%20folder.jpg)
+![1.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.6%20design%20folder.jpg)
+![1.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.7%20inside%20src.jpg)
+![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
 
     * Design Folder Hierarchy
 
