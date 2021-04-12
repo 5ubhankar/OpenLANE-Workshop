@@ -72,6 +72,31 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 ![2.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.9%20placement%20magic%20result.jpg)
 
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
+![3.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.1%20floorplan%20mode%20chg.jpg)
+
+![3.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.2%20floorplan%20mode%20chg%20op.jpg)
+
+![3.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.3%20cp%20tech%20file%20to%20inv%20folder.png)
+
+![3.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.4%20magic%20inv.png)
+
+![3.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.5%20inv%20spice%20create.png)
+
+![3.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.6%20inv%20spice%20file%20location.png)
+
+![3.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.7%20edit%20spice%20file.png)
+
+![3.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.8%20spice%20results.png)
+
+![3.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.9%20spice%20plot.png)
+
+![3.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.10%20rise%20transition%20delay.png)
+
+![3.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.11%20fall%20transition%20delay.png)
+
+![3.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.12%20cell%20rise%20delay.png)
+
+![3.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.13%20cell%20fall%20delay.png)
 
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
 
