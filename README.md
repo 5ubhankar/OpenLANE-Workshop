@@ -151,6 +151,15 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 
 
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
+![5.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.1%20pdn%20results.png)
+
+![5.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.2%20run_routing.png)
+
+
+## Acknowledgments
+
+1. [Kunal Ghosh](https://github.com/kunalg123) - Co-founder (VSD Corp. Pvt. Ltd)
+2. [Nickson Jose](https://github.com/nickson-jose/) - Teaching Assistant (VSD Corp. Pvt. Ltd)
 
 
 
