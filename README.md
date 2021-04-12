@@ -1,7 +1,5 @@
-# OpenLANE-Workshop
+# Advanced Physical Design - OpenLANE Workshop
 ![advanced_physical_design](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/advanced_physical_design.png)
-
-**Advanced Physical Design - OpenLANE Workshop**
 
 ### About the project ###
 This project gives an interactive tutorial experied during the VSD Advanced Physical Design workshop using OpenLANE.
