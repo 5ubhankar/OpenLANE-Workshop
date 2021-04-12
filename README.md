@@ -35,8 +35,9 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 ![OpenLANE_flow](https://github.com/efabless/openlane/blob/master/docs/_static/openlane.flow.1.png)
 
 ## Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK
+#### Skywater PDK Files ####
 
-    #### Skywater PDK Files ####
+![1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1%20openlane%20directory.jpg)
 
     * Invoking OpenLANE
 
