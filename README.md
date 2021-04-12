@@ -99,6 +99,32 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 ![3.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.13%20cell%20fall%20delay.png)
 
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
+![4.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.2%20magic%20grid%20cmd.png)
+![4.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.3%20port%20def%20of%20layout.png)
+![4.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.4%20def%20port%20class%20and%20use.png)
+![4.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.5%20lef%20write.png)
+![4.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.6%20modify%20picorv32a%20config%20file.png)
+![4.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.7.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.7.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.8.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.8.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.8.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.12.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.14](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.15](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.15.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.15.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.15.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.15.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+![4.16](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
+
 
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
 
