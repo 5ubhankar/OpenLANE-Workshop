@@ -36,32 +36,21 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 
 ## Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK
 #### Openlane working directory ####
-
 ![1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1%20openlane%20directory.jpg)
-
-![1.1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1.1%20inside%20pdk.jpg)
 
 ![1.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.2%20pdks.jpg)
 
 ![1.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.3%20inside%20sky130a.jpg)
+
 #### Invoking OpenLANE and Package Importing ####
 ![1.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.4%20invoke%20openlane.jpg)
+
 #### Design Folder ####
 ![1.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.6%20design%20folder.jpg)
 ![1.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.7%20inside%20src.jpg)
-#### After Synthesis ####
+
+#### Synthesis ####
 ![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
-
-    * Design Folder Hierarchy
-
-    * Configuration Files
-
-    * Prepare Design
-
-    * Synthesis
-
-
-
 
 
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
