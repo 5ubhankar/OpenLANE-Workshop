@@ -54,16 +54,22 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
 ![2.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.1%20folder%20-tag.jpg)
+
 ![2.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.2%20folder%20-overwrite.jpg)
+
 ![2.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.3%20chg%20clk%20period.jpg)
+
 ![2.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.4%20config%20all%20flags.jpg)
+
 ![2.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.5%20floorplan%20def.jpg)
+
 ![2.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.6%20Floorplan%20magic%20run.jpg)
+
 ![2.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.7%20floorplan%20magic%20result.jpg)
+
 ![2.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.8%20placement%20magic%20run.jpg)
+
 ![2.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.9%20placement%20magic%20result.jpg)
-
-
 
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
 
