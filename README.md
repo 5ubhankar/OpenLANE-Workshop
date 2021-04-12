@@ -1,5 +1,5 @@
 # OpenLANE-Workshop
-![advanced_physical_design](https://user-images.githubusercontent.com/82052594/114381521-d4af4780-9ba8-11eb-8ab5-f9009734f23a.png)
+![advanced_physical_design](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/advanced_physical_design.png)
 
 **Advanced Physical Design - OpenLANE Workshop**
 ## Table of Contents
@@ -12,7 +12,12 @@
 
 ### About the project ###
 This project gives an interactive tutorial experied during the VSD Advanced Physical Design workshop using OpenLANE.
+
 OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault, OpenPhySyn, SPEF-Extractor and custom methodology scripts for design exploration and optimization. It is a tool started for true open source tape-out experience and comes with APACHE version 2.0 licence. The goal of OpenLANE is to produce clean GDSII without any human intervention. OpenLANE is tuned for Skywater 130nm open-source PDK and can be used to produce hard macros and chips.
+
+### OpenLANE Architecture ###
+![OpenLANE_flow](https://github.com/efabless/openlane/blob/master/docs/_static/openlane.flow.1.png)
+
 
 
 
