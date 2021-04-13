@@ -50,7 +50,7 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 OpenLANE PDK - sky130A was used here.
 ![1.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.2%20pdks.jpg)
 
-the tech and ref file location.
+The tech and ref file location.
 ![1.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.3%20inside%20sky130a.jpg)
 
 #### Invoking OpenLANE and Package Importing ####
