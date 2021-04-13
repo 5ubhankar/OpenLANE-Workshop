@@ -20,7 +20,8 @@
 10. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
     * 
 12. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
-13. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
+    * Routing
+14. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
 
 
 ## About the project ##
@@ -170,14 +171,12 @@ Cell fall delay = Time difference between 50% of falling output and 50% of risin
 ---
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
 
+#### Creating the lef file for the inverter ####
 
-
-
-
-Tracks file is used during the routing stage. These control the routes, that specification is given by tarcks.
+Tracks file is used during the routing stage. These control the routes, that specification is given by tacks file.
 ![4.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
 
-Run grid command in the magic console to draw grid on the laout as per requirement.
+Run grid command in the magic console to draw grid on the laout as per requirement. The ports must stay on the interconnect of the grids. The width and height of the std cell must be odd multiples of nunber of grids.
 ![4.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.2%20magic%20grid%20cmd.png)
 
 Needed to define ports to the layout before converting to lef.
@@ -188,6 +187,8 @@ Define port class and port use in magic:
 
 Command to make the lef file from magic console.
 ![4.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.5%20lef%20write.png)
+
+#### Include the inverter inside picorv32a ####
 
 Modify config.tcl file for synthesis.
 ![4.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.6%20modify%20picorv32a%20config%20file.png)
@@ -200,6 +201,8 @@ Custom inverter inside the merged.lef file
 
 Placement of the custom inverter inside the picorv32a layout.
 ![4.7.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.7.2%20inv%20inside%20picorv32s.png)
+
+#### Slack optimisations ####
 
 Slack optimisations by setting synthesing strategy and sizing.
 ![4.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.8%20cmd%20to%20improve%20slack%201.png)
@@ -219,6 +222,8 @@ Editing the base.sdc file inside src folder.
 pre_sta.conf file inside the openlane working folder. Set of command to run in openSTA timing analysis.
 ![4.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.11%20pre_sta%20conf%20file%20in%20openlane.png)
 
+#### OpenSTA configurations ####
+
 After running the openSTA separately, slack improved by replacing buffer 1 with buffer 4 to increase speed. But this will reduce area.
 ![4.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.12%20buf%201%20to%204%20improve%20slack%203.png)
 
@@ -231,6 +236,9 @@ The improved netlist is replaced with the exiting synthesis verilog file inside 
 Run clock tree synthesis
 
 ![4.14](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.14%20run_cts.png)
+
+#### OpenROAD configurations ####
+OpenROAD has been integrated in openLANE which enable openSTA to run from inside openLANE.
 
 In OpenROAD the timing analysis is done by creating a .db database file. This database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD. Whenever the DEF file changes we need to recreate this .db file.
 
@@ -253,11 +261,15 @@ Final slack report
 ---
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
 
+#### Power Distribution Network generation ####
+
 After generating clock tree network and verifying post routing STA checks next step is power distribution network generation in OpenLANE.
 Command -> `% gen_pdn`
 
 Report generated after running pdn
 ![5.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.1%20pdn%20results.png)
+
+#### Routing  ####
 
 Comand to run routing.
 
