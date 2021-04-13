@@ -108,18 +108,25 @@ Clone the inverter design from git loaction -> https://github.com/nickson-jose/v
 Folder location inside the openLANE to be placed.
 ![3.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.3%20cp%20tech%20file%20to%20inv%20folder.png)
 
-
+Inverter layout in magic.
 ![3.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.4%20magic%20inv.png)
 
+Create spice file for the inverter.
 ![3.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.5%20inv%20spice%20create.png)
 
+Spice file created location.
 ![3.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.6%20inv%20spice%20file%20location.png)
 
+Add VDD and VSS in Spice file and also add a pulse to plot a respone.
 ![3.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.7%20edit%20spice%20file.png)
 
+Runing ngspice and then plotting the output to time.
+Run spice file -> '$ ngspice sky130a_inv.spice
 ![3.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.8%20spice%20results.png)
 
+ngSpice output plot.
 ![3.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.9%20spice%20plot.png)
+
 
 ![3.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.10%20rise%20transition%20delay.png)
 
