@@ -56,8 +56,7 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
 
-This is the first major step in getting your layout done, and this is the most important one.Your floorplan determines your chip quality. 
-Floorplanning includes
+Floorplanning includes:
 * Define the size of your chip/block and Aspect ratio
 * Defining the core area and IO core spacing
 * Defining ports specified by top level engineer.
@@ -99,11 +98,16 @@ The placement in the magic window.
 ![2.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.9%20placement%20magic%20result.jpg)
 
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
+Setting the IO pin mode in run time.
 ![3.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.1%20floorplan%20mode%20chg.jpg)
 
+Result after changing the IO pin mode.
 ![3.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.2%20floorplan%20mode%20chg%20op.jpg)
 
+Clone the inverter design from git loaction -> https://github.com/nickson-jose/vsdstdcelldesign.git
+Folder location inside the openLANE to be placed.
 ![3.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.3%20cp%20tech%20file%20to%20inv%20folder.png)
+
 
 ![3.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.4%20magic%20inv.png)
 
