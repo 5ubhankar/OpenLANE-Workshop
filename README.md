@@ -7,24 +7,24 @@
 1. [**About the project**](https://github.com/5ubhankar/OpenLANE-Workshop#about-the-project)
 3. [**OpenLANE Architecture**](https://github.com/5ubhankar/OpenLANE-Workshop#openlane-architecture)
 4. [**Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/5ubhankar/OpenLANE-Workshop#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)  
-    * Openlane working directory
-    * Invoking OpenLANE and Package Importing
-    * Design Folder
-    * Synthesis
+    * [Openlane working directory](https://github.com/5ubhankar/OpenLANE-Workshop#openlane-working-directory)
+    * [Invoking OpenLANE and Package Importing](https://github.com/5ubhankar/OpenLANE-Workshop#invoking-openlane-and-package-importing)
+    * [Design Folder](https://github.com/5ubhankar/OpenLANE-Workshop#design-folder)
+    * [Synthesis](https://github.com/5ubhankar/OpenLANE-Workshop#synthesis)
 5. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
-    * Steps for floorplan
-    * Steps for placement
+    * [Steps for floorplan](https://github.com/5ubhankar/OpenLANE-Workshop#steps-for-floorplan)
+    * [Steps for placement](https://github.com/5ubhankar/OpenLANE-Workshop#steps-for-placement)
 6. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
-    * Modes of floorplan
-    * Using VSD custom inverter for spice analysis
+    * [Modes of floorplan](https://github.com/5ubhankar/OpenLANE-Workshop#modes-of-floorplan)
+    * [Using VSD custom inverter for spice analysis](https://github.com/5ubhankar/OpenLANE-Workshop#using-vsd-custom-inverter-for-spice-analysis)
 7. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-    * Creating the lef file for the inverter
-    * Slack optimisations
-    * OpenSTA configurations
-    * OpenROAD configurations
+    * [Creating the lef file for the inverter](https://github.com/5ubhankar/OpenLANE-Workshop#creating-the-lef-file-for-the-inverter)
+    * [Slack optimisations](https://github.com/5ubhankar/OpenLANE-Workshop#slack-optimisations)
+    * [OpenSTA configurations](https://github.com/5ubhankar/OpenLANE-Workshop#opensta-configurations)
+    * [OpenROAD configurations](https://github.com/5ubhankar/OpenLANE-Workshop#openroad-configurations)
 8. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
-    * Power Distribution Network generation
-    * Routing
+    * [Power Distribution Network generation](https://github.com/5ubhankar/OpenLANE-Workshop#power-distribution-network-generation)
+    * [Routing](https://github.com/5ubhankar/OpenLANE-Workshop#routing)
 9. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
 
 
