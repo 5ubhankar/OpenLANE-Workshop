@@ -5,8 +5,12 @@
 
 ## Table of Contents
 1. [**About the project**](https://github.com/5ubhankar/OpenLANE-Workshop#about-the-project)
-2. [**OpenLANE Architecture**](https://github.com/5ubhankar/OpenLANE-Workshop#openlane-architecture)
-3. [**Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/5ubhankar/OpenLANE-Workshop#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)   
+    * Openlane working directory
+    * Invoking OpenLANE and Package Importing
+    * Design Folder
+    * Synthesis
+3. [**OpenLANE Architecture**](https://github.com/5ubhankar/OpenLANE-Workshop#openlane-architecture)
+4. [**Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/5ubhankar/OpenLANE-Workshop#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)   
 5. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
 6. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
 7. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
@@ -33,18 +37,24 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 #### Openlane working directory ####
 ![1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1%20openlane%20directory.jpg)
 
+OpenLANE PDK - sky130A was used here.
 ![1.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.2%20pdks.jpg)
 
+the tech and ref file location.
 ![1.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.3%20inside%20sky130a.jpg)
 
 #### Invoking OpenLANE and Package Importing ####
 ![1.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.4%20invoke%20openlane.jpg)
 
 #### Design Folder ####
+
 ![1.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.6%20design%20folder.jpg)
+
+Verilog and sdc file inside src
 ![1.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.7%20inside%20src.jpg)
 
 #### Synthesis ####
+After synthesis these folders gets generated with a time stamp
 ![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
 
 ---
@@ -242,7 +252,7 @@ If there are DRC errors after routing two ways to fix them - re-run routing with
 
 After routing has been completed interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file. The SPEF extractor is not included within OpenLANE as of now.
 
-DRC and LVS verifiaction can be done in magic/Klayout and netgen respectively. GDSII file can be obtained from magic.
+DRC and LVS verifiaction can be done in magic and netgen respectively. GDSII file can be obtained from magic.
 
 ---
 ## Acknowledgments
