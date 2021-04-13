@@ -6,15 +6,7 @@
 ## Table of Contents
 1. [**About the project**](https://github.com/5ubhankar/OpenLANE-Workshop#about-the-project)
 2. [**OpenLANE Architecture**](https://github.com/5ubhankar/OpenLANE-Workshop#openlane-architecture)
-3. [**Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/5ubhankar/OpenLANE-Workshop#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)
-    * Skywater PDK Files
-    * Invoking OpenLANE
-    * Package Importing
-    * Design Folder
-    * Design Folder Hierarchy
-    * Configuration Files
-    * Prepare Design
-    * Synthesis
+3. [**Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK**](https://github.com/5ubhankar/OpenLANE-Workshop#day-1-inception-of-open-source-eda-openlane-and-sky130-pdk)   
 5. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
 6. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
 7. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
@@ -216,20 +208,25 @@ Run clock tree synthesis
 
 In OpenROAD the timing analysis is done by creating a .db database file. This database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD. Whenever the DEF file changes we need to recreate this .db file.
 
+Reading def file
 ![4.15](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15%20openroad%20read%20def.png)
 
+Reading lef file
 ![4.15.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15.1%20openroad%20read%20lef.png)
 
+Writing the db file, reading the verilog file and lib files.
 ![4.15.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15.2%20write%20db%20and%20read%20liberty%20max.png)
-
 ![4.15.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15.3%20read%20liberty%20min%20and%20sdc.png)
 
+Running the report 
 ![4.15.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15.4%20report%20checks.png)
 
+Final slack report
 ![4.16](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.16%20slack%20improved%204%20typical.png)
 
 ---
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
+
 ![5.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.1%20pdn%20results.png)
 
 ![5.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.2%20run_routing.png)
