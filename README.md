@@ -133,62 +133,88 @@ ngSpice output plot.
 Rise transition delay = Time taken for the output signal to reach from 20% of max value to 80% of max value.
 
 ![3.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.10%20rise%20transition%20delay.png)
-Value = `0.06397ns`
+`Value = 0.06397ns`
 
 Fall transition delay = Time taken for the output signal to reach from 80% of max value to 20% of max value.
 
 ![3.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.11%20fall%20transition%20delay.png)
-Value = `0.04283ns`
+`Value = 0.04283ns`
 
 Cell rise delay = Time difference between 50% of rising output and 50% of falling input.
 
 ![3.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.12%20cell%20rise%20delay.png)
-Value = `0.0595ns`
+`Value = 0.0595ns`
 
 Cell fall delay = Time difference between 50% of falling output and 50% of rising input.
 
 ![3.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.13%20cell%20fall%20delay.png)
-Value = `0.02761ns`
+`Value = 0.02761ns`
 
 ---
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
+
+
+
+
+
+Tracks file is used during the routing stage. These control the routes, that specification is given by tarcks.
 ![4.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
 
+Run grid command in the magic console to draw grid on the laout as per requirement.
 ![4.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.2%20magic%20grid%20cmd.png)
 
+Needed to define ports to the layout before converting to lef.
 ![4.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.3%20port%20def%20of%20layout.png)
 
+Define port class and port use in magic:
 ![4.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.4%20def%20port%20class%20and%20use.png)
 
+Command to make the lef file from magic console.
 ![4.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.5%20lef%20write.png)
 
+Modify config.tcl file for synthesis.
 ![4.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.6%20modify%20picorv32a%20config%20file.png)
 
+Commands run during openlane flow to include the inverter in the picorv32a
 ![4.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.7%20add%20inv%20to%20picorv32a%20cmd.png)
 
+Custom inverter inside the merged.lef file
 ![4.7.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.7.1%20inv%20included%20in%20the%20merged%20lef%20file.png)
 
+Placement of the custom inverter inside the picorv32a layout.
 ![4.7.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.7.2%20inv%20inside%20picorv32s.png)
 
+Slack optimisations by setting synthesing strategy and sizing.
 ![4.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.8%20cmd%20to%20improve%20slack%201.png)
 
+Slack improvement 1
 ![4.8.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.8.1%20slack%20improved%201.png)
 
+Setting max fanout to 4 
 ![4.8.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.8.2%20cmd%20to%20improve%20slack%202.png)
 
+Slack improvement 2
 ![4.8.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.8.3%20slack%20improved%202.png)
 
+Editing the base.sdc file inside src folder. 
 ![4.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.10%20base%20sdc%20file%20in%20src.png)
 
+pre_sta.conf file inside the openlane working folder. Set of command to run in openSTA timing analysis.
 ![4.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.11%20pre_sta%20conf%20file%20in%20openlane.png)
 
+After running the openSTA separately, slack improved by replacing buffer 1 with buffer 4 to increase speed. But this will reduce area.
 ![4.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.12%20buf%201%20to%204%20improve%20slack%203.png)
 
+Slack improved 3
 ![4.12.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.12.1%20slack%20improved%203.png)
 
+The improved netlist is replaced with the exiting synthesis verilog file inside the results folder.
 ![4.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.13%20overwrite%20verilog%20file.png)
 
+Run clock tree synthesis
 ![4.14](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.14%20run_cts.png)
+
+In OpenROAD the timing analysis is done by creating a .db database file. This database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD. Whenever the DEF file changes we need to recreate this .db file.
 
 ![4.15](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.15%20openroad%20read%20def.png)
 
