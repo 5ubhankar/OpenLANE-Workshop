@@ -227,9 +227,18 @@ Final slack report
 ---
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
 
+After generating clock tree network and verifying post routing STA checks next step is power distribution network generation in OpenLANE.
+Command -> `% gen_pdn`
+
+Report generated after running pdn
 ![5.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.1%20pdn%20results.png)
 
+Comand to run routing.
 ![5.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.2%20run_routing.png)
+
+If there are DRC errors after routing two ways to fix them - re-run routing with higher QoR settings or manually fix DRC errors specific in tritonRoute.drc file.
+
+After routing has been completed interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file. The SPEF extractor is not included within OpenLANE as of now.
 
 ---
 ## Acknowledgments
