@@ -130,14 +130,21 @@ Run spice file -> `$ ngspice sky130a_inv.spice`
 ngSpice output plot.
 ![3.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.9%20spice%20plot.png)
 
-
+Rise transition delay = Time taken for the output signal to reach from 20% of max value to 80% of max value.
 ![3.10](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.10%20rise%20transition%20delay.png)
+Value = `0.06397ns`
 
+Fall transition delay = Time taken for the output signal to reach from 80% of max value to 20% of max value.
 ![3.11](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.11%20fall%20transition%20delay.png)
+Value = `0.04283ns`
 
+Cell rise delay = Time difference between 50% of rising output and 50% of falling input.
 ![3.12](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.12%20cell%20rise%20delay.png)
+Value = `0.0595ns`
 
+Cell fall delay = Time difference between 50% of falling output and 50% of rising input.
 ![3.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.13%20cell%20fall%20delay.png)
+Value = `0.02761ns`
 
 ---
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
