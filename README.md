@@ -36,6 +36,7 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 
 ![OpenLANE_flow](https://github.com/efabless/openlane/blob/master/docs/_static/openlane.flow.1.png)
 
+---
 ## Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK
 #### Openlane working directory ####
 ![1.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.1%20openlane%20directory.jpg)
@@ -54,6 +55,7 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 #### Synthesis ####
 ![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
 
+---
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
 
 Floorplanning includes:
@@ -97,6 +99,7 @@ Command to run the magic tool with the placement result and the sky130 techfile
 The placement in the magic window.
 ![2.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.9%20placement%20magic%20result.jpg)
 
+---
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
 Setting the IO pin mode in run time.
 ![3.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.1%20floorplan%20mode%20chg.jpg)
@@ -136,6 +139,7 @@ ngSpice output plot.
 
 ![3.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.13%20cell%20fall%20delay.png)
 
+---
 ## Day-4 Pre-layout timing analysis and importance of good clock tree
 ![4.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
 
@@ -187,13 +191,13 @@ ngSpice output plot.
 
 ![4.16](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.16%20slack%20improved%204%20typical.png)
 
-
+---
 ## Day-5 Final steps for RTL2GDS using tritonRoute and openSTA
 ![5.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.1%20pdn%20results.png)
 
 ![5.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/5.2%20run_routing.png)
 
-
+---
 ## Acknowledgments
 
 1. [Kunal Ghosh](https://github.com/kunalg123) - Co-founder (VSD Corp. Pvt. Ltd)
