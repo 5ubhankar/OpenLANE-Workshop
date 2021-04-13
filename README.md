@@ -121,7 +121,7 @@ Add VDD and VSS in Spice file and also add a pulse to plot a respone.
 ![3.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.7%20edit%20spice%20file.png)
 
 Runing ngspice and then plotting the output to time.
-Run spice file -> '$ ngspice sky130a_inv.spice
+Run spice file -> '$ ngspice sky130a_inv.spice'
 ![3.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.8%20spice%20results.png)
 
 ngSpice output plot.
