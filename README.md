@@ -12,10 +12,15 @@
     * Design Folder
     * Synthesis
 6. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
-7. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
-8. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-9. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
-10. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
+    * Steps for floorplan
+    * Steps for placement
+8. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
+    * Modes of floorplan
+    * Using VSD custom inverter for spice analysis
+10. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+    * 
+12. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+13. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
 
 
 ## About the project ##
@@ -54,25 +59,24 @@ Verilog and sdc file inside src
 ![1.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.7%20inside%20src.jpg)
 
 #### Synthesis ####
+To run synthsis command `run_synthesis`is used in opneLANE.
+
 After synthesis these folders gets generated with a time stamp
 ![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
 
 ---
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
 
-Floorplanning includes:
-* Define the size of your chip/block and Aspect ratio
-* Defining the core area and IO core spacing
-* Defining ports specified by top level engineer.
-* Design a Floor Plan and Power Network with horizontal metal layer such that the total IR Drop must be less than 5% (VDD+VSS) of VDD to operate within the power budget.
-* IO Placement/Pin placement
-* Allocates power routing resources
-* Place the hard macros (fly-line analysis) and reserve space for standard cells.
-* Defining Placement and Routing blockages blockages
-* If we have multi height cells in the reference library separate placement rows have to be provided for two different unit tiles.
-* Creating I/O Rings
-* Creating the Pad Ring for the Chip
-* Creating I/O Pin Rings for Blocks
+In Floorplanning following aspects needs to be set:
+1. Die Area
+2. Core Area
+3. Core Utilization
+4. Aspect Ratio
+5. Place Macros
+6. Power distribution network (done after floorplan in openlane)
+7. Place input and output pins
+
+#### Steps for floorplan ####
 
 Switch -tag load a the design in openLANE
 ![2.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.1%20folder%20-tag.jpg)
@@ -86,6 +90,8 @@ Change the clock period in the working design folder itself without change it in
 Location of the configuration files. Readme file contains all information about the flags of all stages.
 ![2.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.4%20config%20all%20flags.jpg)
 
+Run floorplan using command `run_floorplan` in openLANE.
+
 The def file location of the floorplan
 ![2.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.5%20floorplan%20def.jpg)
 
@@ -95,6 +101,10 @@ Command to run the magic tool with the floorplan result and the sky130 techfile
 The floorplan in the magic window.
 ![2.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.7%20floorplan%20magic%20result.jpg)
 
+#### Steps for placement ####
+
+Run placement using command `run_placement` in openLANE.
+
 Command to run the magic tool with the placement result and the sky130 techfile
 ![2.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.8%20placement%20magic%20run.jpg)
 
@@ -103,11 +113,16 @@ The placement in the magic window.
 
 ---
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
+
+#### Modes of floorplan ####
+
 Setting the IO pin mode in run time.
 ![3.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.1%20floorplan%20mode%20chg.jpg)
 
 Result after changing the IO pin mode.
 ![3.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/3.2%20floorplan%20mode%20chg%20op.jpg)
+
+#### Using VSD custom inverter for spice analysis  ####
 
 Clone the inverter design from git loaction -> https://github.com/nickson-jose/vsdstdcelldesign.git
 Folder location inside the openLANE to be placed.
