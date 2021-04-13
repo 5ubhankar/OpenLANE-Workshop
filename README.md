@@ -11,17 +11,21 @@
     * Invoking OpenLANE and Package Importing
     * Design Folder
     * Synthesis
-6. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
+5. [**Day-2 Good floorplan vs bad floorplan and introduction to library cells**](https://github.com/5ubhankar/OpenLANE-Workshop#day-2-good-floorplan-vs-bad-floorplan-and-introduction-to-library-cells)
     * Steps for floorplan
     * Steps for placement
-8. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
+6. [**Day-3 Design library cell using Magic Layout and ngspice characterization**](https://github.com/5ubhankar/OpenLANE-Workshop#day-3-design-library-cell-using-magic-layout-and-ngspice-characterization)
     * Modes of floorplan
     * Using VSD custom inverter for spice analysis
-10. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
-    * 
-12. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+7. [**Day-4 Pre-layout timing analysis and importance of good clock tree**](https://github.com/5ubhankar/OpenLANE-Workshop#day-4-pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+    * Creating the lef file for the inverter
+    * Slack optimisations
+    * OpenSTA configurations
+    * OpenROAD configurations
+8. [**Day-5 Final steps for RTL2GDS using tritonRoute and openSTA**](https://github.com/5ubhankar/OpenLANE-Workshop#day-5-final-steps-for-rtl2gds-using-tritonroute-and-opensta)
+    * Power Distribution Network generation
     * Routing
-14. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
+9. [**Acknowledgments**](https://github.com/5ubhankar/OpenLANE-Workshop#acknowledgments)
 
 
 ## About the project ##
@@ -174,6 +178,7 @@ Cell fall delay = Time difference between 50% of falling output and 50% of risin
 #### Creating the lef file for the inverter ####
 
 Tracks file is used during the routing stage. These control the routes, that specification is given by tacks file.
+
 ![4.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.1%20tracks%20file.png)
 
 Run grid command in the magic console to draw grid on the laout as per requirement. The ports must stay on the interconnect of the grids. The width and height of the std cell must be odd multiples of nunber of grids.
