@@ -33,6 +33,7 @@ fabrication process for the EDA tools used in designing an IC. PDK’s are tradi
 open-source Digital ASIC Design. Google and Skywater have broken this stigma and published the world’s first open-source PDK on June 30th, 
 2020. This breakthrough has been a catalyst for open-source EDA tools. This workshop focuses on using the open-source RTL2GDS EDA tool, 
 OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GDS flow as shown below:
+
 ![OpenLANE_flow](https://github.com/efabless/openlane/blob/master/docs/_static/openlane.flow.1.png)
 
 ## Day-1 Inception of open-source EDA, OpenLANE and Sky130 PDK
@@ -54,22 +55,47 @@ OpenLANE, in conjunction with the Skywater 130nm PDK to perform the full  RTL2GD
 ![1.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/1.8%20inside%20runs.jpg)
 
 ## Day-2 Good floorplan vs bad floorplan and introduction to library cells
+
+This is the first major step in getting your layout done, and this is the most important one.Your floorplan determines your chip quality. 
+Floorplanning includes
+* Define the size of your chip/block and Aspect ratio
+* Defining the core area and IO core spacing
+* Defining ports specified by top level engineer.
+* Design a Floor Plan and Power Network with horizontal metal layer such that the total IR Drop must be less than 5% (VDD+VSS) of VDD to operate within the power budget.
+* IO Placement/Pin placement
+* Allocates power routing resources
+* Place the hard macros (fly-line analysis) and reserve space for standard cells.
+* Defining Placement and Routing blockages blockages
+* If we have multi height cells in the reference library separate placement rows have to be provided for two different unit tiles.
+* Creating I/O Rings
+* Creating the Pad Ring for the Chip
+* Creating I/O Pin Rings for Blocks
+
+Switch -tag load a the design in openLANE
 ![2.1](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.1%20folder%20-tag.jpg)
 
+Switch -overwrite to overwrite the design in openLane
 ![2.2](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.2%20folder%20-overwrite.jpg)
 
+Change the clock period in the working design folder itself without change it in the config file.
 ![2.3](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.3%20chg%20clk%20period.jpg)
 
+Location of the configuration files. Readme file contains all information about the flags of all stages.
 ![2.4](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.4%20config%20all%20flags.jpg)
 
+The def file location of the floorplan
 ![2.5](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.5%20floorplan%20def.jpg)
 
+Command to run the magic tool with the floorplan result and the sky130 techfile
 ![2.6](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.6%20Floorplan%20magic%20run.jpg)
 
+The floorplan in the magic window.
 ![2.7](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.7%20floorplan%20magic%20result.jpg)
 
+Command to run the magic tool with the placement result and the sky130 techfile
 ![2.8](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.8%20placement%20magic%20run.jpg)
 
+The placement in the magic window.
 ![2.9](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/2.9%20placement%20magic%20result.jpg)
 
 ## Day-3 Design library cell using Magic Layout and ngspice characterization
