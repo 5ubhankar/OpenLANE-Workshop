@@ -204,6 +204,7 @@ The improved netlist is replaced with the exiting synthesis verilog file inside 
 ![4.13](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.13%20overwrite%20verilog%20file.png)
 
 Run clock tree synthesis
+
 ![4.14](https://github.com/5ubhankar/OpenLANE-Workshop/blob/main/Screenshots/4.14%20run_cts.png)
 
 In OpenROAD the timing analysis is done by creating a .db database file. This database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD. Whenever the DEF file changes we need to recreate this .db file.
